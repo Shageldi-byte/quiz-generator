@@ -1,9 +1,9 @@
-import { Button, MenuItem, TextField } from "@mui/material";
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import ErrorMessage from "../../components/ErrrorMessage/ErrorMessage";
-import Categories from "../../data/Categories";
 import "./Home.css";
+import Categories from "../../data/Categories";
+import ErrorMessage from "../../components/ErrrorMessage/ErrorMessage";
+import React, { useState } from "react";
+import { Button, MenuItem, TextField } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Home = ({ name, setName, fetchQuestions, questions }) => {
   const [category, setCategory] = useState("");
@@ -22,9 +22,15 @@ const Home = ({ name, setName, fetchQuestions, questions }) => {
       history("/quiz");
     }
   };
+
+  
   return (
     <div className="content">
       <div className="settings">
+
+         <Button fullWidth onClick={()=>{history('/ai')}} variant="contained">Go AI quiz generator</Button>
+         <br/>
+
         <span style={{ fontSize: 30 }}>Quiz Settings</span>
 
         <div className="settings_select">

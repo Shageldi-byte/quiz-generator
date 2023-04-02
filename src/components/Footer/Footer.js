@@ -5,10 +5,10 @@ const Footer = () => {
     <div style={{ textAlign: "center", marginBottom: 10 }}>
       Developed by{" "}
       <a
-        href="https://www.linkedin.com/in/krishnaprasad-e-k-6322831bb"
+        href="#"
         style={{ cursor: "pointer" }}
       >
-        <b>Krishnaprasad E K</b>
+        <b>Gylyjow Eshiret</b>
       </a>
     </div>
   );

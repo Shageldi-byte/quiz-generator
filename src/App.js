@@ -1,12 +1,13 @@
-import { useState } from "react";
-import axios from "axios";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import AI from "./pages/AI/AI";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Quiz from "./pages/Quiz/Quiz";
 import Result from "./pages/Result/Result";
+import axios from "axios";
+import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [name, setName] = useState("");
@@ -28,6 +29,7 @@ function App() {
         <Header />
 
         <Routes>
+          <Route path="/ai" element={<AI/>}/>
           <Route
             path="/"
             exact
