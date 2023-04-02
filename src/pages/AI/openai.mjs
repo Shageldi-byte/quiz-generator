@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = process.env.REACT_APP_OPEN_AI_KEY;
 
 export async function generateQuiz(prompt) {
   const url = "https://api.openai.com/v1/completions";
